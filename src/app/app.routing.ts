@@ -9,7 +9,7 @@ import { MyComponente3Component } from './my-componente3/my-componente3.componen
 
 // Array de rutas
 const  appRoutes: Routes = [
-    { path: '', component: MyComponente1Component },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: MyComponente1Component },
     { path: 'myComponente1', component: MyComponente1Component },
     { path: 'myComponente2', component: MyComponente2Component },
