@@ -1,3 +1,29 @@
 <p>
   my-componente2 works!
 </p>
+
+<h2>Contacto Usuario</h2>
+
+<form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
+
+  <label for="nombre">Nombre</label>
+  <input type="text" class="form-control" [(ngModel)]="user.nombre" name="nombre" #nombre="ngModel" required />
+  <br>
+  <span *ngIf="nombre.touched && !nombre.valid">Nombre requerido</span>
+  <br><br>
+
+  <label for="apellidos">Apellidos</label>
+  <input type="text" class="form-control" [(ngModel)]="user.apellidos" name="apellidos" #apellidos="ngModel" />
+  <br><br>
+
+  <label for="email">Email</label>
+  <input type="text" class="form-control" [(ngModel)]="user.email" name="email" #email="ngModel" />
+  <br><br>
+
+  <label for="mensaje">Mensaje</label>
+  <input type="text" class="form-control" [(ngModel)]="user.mensaje" name="mensaje" #mensaje="ngModel" />
+  <br><br>
+
+  <input type="submit" value="Enviar" [disabled]="!formContacto.form.valid"/>
+
+</form>
