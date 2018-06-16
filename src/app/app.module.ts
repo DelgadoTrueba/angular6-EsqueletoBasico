@@ -9,6 +9,7 @@ import { MyComponente3Component } from './my-componente3/my-componente3.componen
 
 //Importar Modulos
 import { routing, appRoutingProviders } from './app.routing';
+import { NavegadorComponent } from './navegador/navegador.component';
 
 @NgModule({
   //Componentes
@@ -16,7 +17,8 @@ import { routing, appRoutingProviders } from './app.routing';
     AppComponent,
     MyComponente1Component,
     MyComponente2Component,
-    MyComponente3Component
+    MyComponente3Component,
+    NavegadorComponent
   ],
   //Modulos
   imports: [
