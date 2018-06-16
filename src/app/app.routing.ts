@@ -14,6 +14,7 @@ const  appRoutes: Routes = [
     { path: 'myComponente1', component: MyComponente1Component },
     { path: 'myComponente2', component: MyComponente2Component },
     { path: 'myComponente3', component: MyComponente3Component },
+    { path: 'myComponente3/:id', component: MyComponente3Component },
     { path: '**', component: MyComponente1Component }, //Ruta 404
 ];
 
