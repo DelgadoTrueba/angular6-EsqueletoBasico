@@ -4,4 +4,9 @@
   Example
 </div>
 
+<div class="example-container"
+    [ngClass]="(!isActive)?'my-class-with-default-shadow':'my-class-with-custom-shadow'">
+  Example
+</div>
+
 <button mat-button (click)="isActive = !isActive">Toggle Elevation</button>
