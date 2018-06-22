@@ -1,32 +1,36 @@
-//Importar Componentes
-import { AppComponent } from './app.component';
-import { MyComponente1Component } from './my-componente1/my-componente1.component';
-import { MyComponente2Component } from './my-componente2/my-componente2.component';
-import { MyComponente3Component } from './my-componente3/my-componente3.component';
-
 //Importar Modulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
-import { NavegadorComponent } from './navegador/navegador.component';
-import { HeaderComponent } from './header/header.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+//Importar Componentes
+import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { EjemploFormularioComponent } from './pages/ejemploFormulario/ejemploFormulario.component';
+import { MostrarIdComponent } from './pages/mostrarId/mostrarId.component';
+import { NavegadorComponent } from './component/navegador/navegador.component';
+import { HeaderComponent } from './component/header/header.component';
+import { Component404Component } from './pages/component404/component404.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
   declarations: [
     AppComponent,
-    MyComponente1Component,
-    MyComponente2Component,
-    MyComponente3Component,
+    HomeComponent,
+    EjemploFormularioComponent,
+    MostrarIdComponent,
     NavegadorComponent,
     HeaderComponent,
+    Component404Component,
   ],
   //Modulos
   imports: [
     BrowserModule,
     FormsModule,
     routing,
+    ReactiveFormsModule
   ],
   //Servicos
   providers: [ appRoutingProviders ],

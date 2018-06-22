@@ -3,19 +3,19 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Importar Componentes
-import { MyComponente1Component } from './my-componente1/my-componente1.component';
-import { MyComponente2Component } from './my-componente2/my-componente2.component';
-import { MyComponente3Component } from './my-componente3/my-componente3.component';
+import { HomeComponent } from './pages/home/home.component';
+import { EjemploFormularioComponent } from './pages/ejemploFormulario/ejemploFormulario.component';
+import { MostrarIdComponent } from './pages/mostrarId/mostrarId.component';
+import { Component404Component } from './pages/component404/component404.component';
 
 // Array de rutas
 const  appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: MyComponente1Component },
-    { path: 'myComponente1', component: MyComponente1Component },
-    { path: 'myComponente2', component: MyComponente2Component },
-    { path: 'myComponente3', component: MyComponente3Component },
-    { path: 'myComponente3/:id', component: MyComponente3Component },
-    { path: '**', component: MyComponente1Component }, //Ruta 404
+    { path: 'home', component: HomeComponent },
+    { path: 'ejemploFormulario', component: EjemploFormularioComponent },
+    { path: 'mostrarId', component: MostrarIdComponent },
+    { path: 'mostrarId/:id', component: MostrarIdComponent },
+    { path: '**', component: Component404Component }, //Ruta 404
 ];
 
 //Exportar el modulo del router

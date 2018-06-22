@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Component({
-  selector: 'my-componente3',
-  templateUrl: './my-componente3.component.html',
-  styleUrls: ['./my-componente3.component.css']
+  selector: 'mostrarId',
+  templateUrl: './mostrarId.component.html',
+  styleUrls: ['./mostrarId.component.css']
 })
-export class MyComponente3Component implements OnInit {
+export class MostrarIdComponent implements OnInit {
 
   public id: string;
 
