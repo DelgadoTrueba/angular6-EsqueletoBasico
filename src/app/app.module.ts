@@ -10,15 +10,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
 import { NavegadorComponent } from './navegador/navegador.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  //Componentes y Directivas
+  //Componentes, Pipes y Directivas
   declarations: [
     AppComponent,
     MyComponente1Component,
     MyComponente2Component,
     MyComponente3Component,
     NavegadorComponent,
+    HeaderComponent,
   ],
   //Modulos
   imports: [

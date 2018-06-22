@@ -1,0 +1,10 @@
+@font-face{
+    font-family: 'Prestige Signature';
+    src: url('../../assets/PrestigeSignature.ttf');
+}
+
+h1{
+    font-family: 'Prestige Signature';
+    text-align: center;
+    font-size: 75px;
+}
