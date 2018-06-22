@@ -8,6 +8,7 @@ import { EjemploFormularioComponent } from './pages/ejemploFormulario/ejemploFor
 import { MostrarIdComponent } from './pages/mostrarId/mostrarId.component';
 import { Component404Component } from './pages/component404/component404.component';
 import { ButtonsComponent } from './pages/buttons/buttons.component';
+import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
 
 // Array de rutas
 const  appRoutes: Routes = [
@@ -17,6 +18,7 @@ const  appRoutes: Routes = [
     { path: 'mostrarId', component: MostrarIdComponent },
     { path: 'mostrarId/:id', component: MostrarIdComponent },
     { path: 'botones', component: ButtonsComponent },
+    { path: 'elevationCSS', component: ElevationCSSComponent },
     { path: '**', component: Component404Component }, //Ruta 404
 ];
 

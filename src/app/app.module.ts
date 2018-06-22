@@ -19,6 +19,7 @@ import { NavegadorComponent } from './component/navegador/navegador.component';
 import { HeaderComponent } from './component/header/header.component';
 import { Component404Component } from './pages/component404/component404.component';
 import { ButtonsComponent } from './pages/buttons/buttons.component';
+import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -31,6 +32,7 @@ import { ButtonsComponent } from './pages/buttons/buttons.component';
     HeaderComponent,
     Component404Component,
     ButtonsComponent,
+    ElevationCSSComponent,
   ],
   //Modulos y Material Design
   imports: [
