@@ -4,10 +4,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routing, appRoutingProviders } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 //Importar Material Dessing
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 
 
 //Importar Componentes
@@ -20,6 +22,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { Component404Component } from './pages/component404/component404.component';
 import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
+import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -33,6 +36,7 @@ import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.compo
     Component404Component,
     ButtonsComponent,
     ElevationCSSComponent,
+    MyIconsComponent,
   ],
   //Modulos y Material Design
   imports: [
@@ -40,9 +44,11 @@ import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.compo
     FormsModule,
     routing,
     ReactiveFormsModule,
+    HttpClientModule,
 
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   //Servicos
   providers: [ appRoutingProviders ],

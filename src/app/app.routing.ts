@@ -9,6 +9,7 @@ import { MostrarIdComponent } from './pages/mostrarId/mostrarId.component';
 import { Component404Component } from './pages/component404/component404.component';
 import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
+import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 
 // Array de rutas
 const  appRoutes: Routes = [
@@ -19,6 +20,7 @@ const  appRoutes: Routes = [
     { path: 'mostrarId/:id', component: MostrarIdComponent },
     { path: 'botones', component: ButtonsComponent },
     { path: 'elevationCSS', component: ElevationCSSComponent },
+    { path: 'myIcons', component: MyIconsComponent },
     { path: '**', component: Component404Component }, //Ruta 404
 ];
 
