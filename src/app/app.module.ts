@@ -16,6 +16,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 //Importar Componentes
@@ -29,6 +31,7 @@ import { Component404Component } from './pages/component404/component404.compone
 import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
 import { MyIconsComponent } from './pages/my-icons/my-icons.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -43,6 +46,7 @@ import { MyIconsComponent } from './pages/my-icons/my-icons.component';
     ButtonsComponent,
     ElevationCSSComponent,
     MyIconsComponent,
+    FooterComponent,
   ],
   //Modulos y Material Design
   imports: [
@@ -58,6 +62,7 @@ import { MyIconsComponent } from './pages/my-icons/my-icons.component';
     MatToolbarModule,
     MatListModule,
     MatSidenavModule,
+    MatGridListModule,
 
     FlexLayoutModule,
   ],
