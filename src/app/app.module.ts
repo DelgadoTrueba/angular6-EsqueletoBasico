@@ -6,10 +6,16 @@ import { routing, appRoutingProviders } from './app.routing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+//Importar Flex
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 //Importar Material Dessing
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 //Importar Componentes
@@ -48,7 +54,12 @@ import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 
     BrowserAnimationsModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatListModule,
+    MatSidenavModule,
+
+    FlexLayoutModule,
   ],
   //Servicos
   providers: [ appRoutingProviders ],
