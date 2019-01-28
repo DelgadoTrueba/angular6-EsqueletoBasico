@@ -1,0 +1,55 @@
+.drop-zone{
+    width: 400px;
+    height: 100px;
+    max-width: 100%;
+    border: dotted #ccc 2px;
+}
+
+.example-box {
+    width: 200px;
+    height: 50px;
+    border: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+
+    padding: 10px;
+    cursor: move;
+    background: #fff;
+    border-radius: 4px;
+    margin-right: 25px;
+
+    z-index: 1;
+  
+  }
+  
+  .example-box:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  /*lista*/
+  .example-list {
+    width: 250px;
+    height: 700px;
+    
+    border: solid 1px #ccc;
+    background: white;
+  }
+  
+  /*lista a otra lista*/
+  .example-container {
+    width: 400px;
+    margin: 0 25px 25px 0;
+    
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .example-list2 {
+    border: solid 1px #ccc;
+    min-height: 60px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+  }

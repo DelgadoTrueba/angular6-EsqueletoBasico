@@ -48,6 +48,10 @@
   
         <a mat-button [routerLink]="['/myIcons']" [routerLinkActive]="['activado']">
           <mat-icon>filter_6</mat-icon>&nbsp;myIcons</a>
+
+        <a mat-button [routerLink]="['/dragANDdrop1']" [routerLinkActive]="['activado']">
+          <mat-icon>filter_7</mat-icon>&nbsp;dragANDdrop1
+        </a>
       </div>
 
     </mat-toolbar-row>
@@ -80,6 +84,10 @@
           <a mat-list-item (click)="sidenav.toggle()"
           [routerLink]="['/myIcons']" [routerLinkActive]="['activado']" class="blateral">
             <mat-icon>filter_6</mat-icon>&nbsp;myIcons</a>
+
+          <a mat-list-item (click)="sidenav.toggle()"
+          [routerLink]="['/dragANDdrop1']" [routerLinkActive]="['activado']" class="blateral">
+            <mat-icon>filter_7</mat-icon>&nbsp;dragANDdrop1</a>
 
           <a (click)="sidenav.toggle()" mat-list-item class="blateral"><mat-icon>close</mat-icon>&nbsp;Close</a>
       </mat-nav-list>

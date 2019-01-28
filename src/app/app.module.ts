@@ -17,6 +17,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 
@@ -32,6 +33,7 @@ import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
 import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { DragANDdrop1Component } from './component/drag-anddrop1/drag-anddrop1.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -47,6 +49,7 @@ import { FooterComponent } from './component/footer/footer.component';
     ElevationCSSComponent,
     MyIconsComponent,
     FooterComponent,
+    DragANDdrop1Component,
   ],
   //Modulos y Material Design
   imports: [
@@ -63,6 +66,7 @@ import { FooterComponent } from './component/footer/footer.component';
     MatListModule,
     MatSidenavModule,
     MatGridListModule,
+    DragDropModule,
 
     FlexLayoutModule,
   ],
