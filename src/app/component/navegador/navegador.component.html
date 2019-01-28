@@ -52,6 +52,10 @@
         <a mat-button [routerLink]="['/dragANDdrop1']" [routerLinkActive]="['activado']">
           <mat-icon>filter_7</mat-icon>&nbsp;dragANDdrop1
         </a>
+
+        <a mat-button [routerLink]="['/dragANDdropFinal']" [routerLinkActive]="['activado']">
+          <mat-icon>filter_8</mat-icon>&nbsp;dragANDdropFinal
+        </a>
       </div>
 
     </mat-toolbar-row>
@@ -88,6 +92,12 @@
           <a mat-list-item (click)="sidenav.toggle()"
           [routerLink]="['/dragANDdrop1']" [routerLinkActive]="['activado']" class="blateral">
             <mat-icon>filter_7</mat-icon>&nbsp;dragANDdrop1</a>
+
+          <a mat-list-item (click)="sidenav.toggle()"
+          [routerLink]="['/dragANDdropFinal']" [routerLinkActive]="['activado']" class="blateral">
+            <mat-icon>filter_8</mat-icon>&nbsp;dragANDdropFinal</a>
+
+            
 
           <a (click)="sidenav.toggle()" mat-list-item class="blateral"><mat-icon>close</mat-icon>&nbsp;Close</a>
       </mat-nav-list>

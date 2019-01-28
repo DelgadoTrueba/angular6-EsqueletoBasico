@@ -11,6 +11,7 @@ import { ButtonsComponent } from './pages/buttons/buttons.component';
 import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.component';
 import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 import { DragANDdrop1Component } from './component/drag-anddrop1/drag-anddrop1.component';
+import { DragANDdropFINALComponent } from './component/drag-anddrop-final/drag-anddrop-final.component';
 
 // Array de rutas
 const  appRoutes: Routes = [
@@ -23,6 +24,7 @@ const  appRoutes: Routes = [
     { path: 'elevationCSS', component: ElevationCSSComponent },
     { path: 'myIcons', component: MyIconsComponent },
     { path: 'dragANDdrop1', component: DragANDdrop1Component },
+    { path: 'dragANDdropFinal', component: DragANDdropFINALComponent },
     { path: '**', component: Component404Component }, //Ruta 404
 ];
 

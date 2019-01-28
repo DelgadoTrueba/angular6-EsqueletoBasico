@@ -34,6 +34,7 @@ import { ElevationCSSComponent } from './pages/elevation-css/elevation-css.compo
 import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { DragANDdrop1Component } from './component/drag-anddrop1/drag-anddrop1.component';
+import { DragANDdropFINALComponent } from './component/drag-anddrop-final/drag-anddrop-final.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -50,6 +51,7 @@ import { DragANDdrop1Component } from './component/drag-anddrop1/drag-anddrop1.c
     MyIconsComponent,
     FooterComponent,
     DragANDdrop1Component,
+    DragANDdropFINALComponent,
   ],
   //Modulos y Material Design
   imports: [

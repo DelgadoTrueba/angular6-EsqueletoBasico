@@ -1,0 +1,52 @@
+<div class="contenedor">
+    <div>
+        <h3>To do</h3>
+        <ul>
+            <li *ngFor="let one_todo of todo">{{one_todo}}</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Done</h3>
+        <ul>
+            <li *ngFor="let one_done of done">{{one_done}}</li>
+        </ul>
+    </div>
+</div>
+
+
+<div cdkDropListGroup>
+
+  <div class="example-container">
+    <h2>To do</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="todo"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)"
+      (cdkDropListEntered)="entered($event)" 
+      (cdkDropListExited)="exited($event)"
+      id="todo">
+      <div class="example-box" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  
+
+  <div class="example-container">
+    <h2>Done</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="done"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)"
+      (cdkDropListEntered)="entered($event)" 
+      (cdkDropListExited)="exited($event)"
+      id="done">
+      <div class="example-box" *ngFor="let item of done" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+ </div>
