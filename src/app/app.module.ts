@@ -18,6 +18,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -35,6 +36,8 @@ import { MyIconsComponent } from './pages/my-icons/my-icons.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { DragANDdrop1Component } from './component/drag-anddrop1/drag-anddrop1.component';
 import { DragANDdropFINALComponent } from './component/drag-anddrop-final/drag-anddrop-final.component';
+import { RxjsComponent } from './component/rxjs/rxjs.component';
+import { SnackBarComponent } from './component/rxjs/snack-bar/snack-bar.component';
 
 @NgModule({
   //Componentes, Pipes y Directivas
@@ -52,6 +55,8 @@ import { DragANDdropFINALComponent } from './component/drag-anddrop-final/drag-a
     FooterComponent,
     DragANDdrop1Component,
     DragANDdropFINALComponent,
+    RxjsComponent,
+    SnackBarComponent,
   ],
   //Modulos y Material Design
   imports: [
@@ -69,6 +74,7 @@ import { DragANDdropFINALComponent } from './component/drag-anddrop-final/drag-a
     MatSidenavModule,
     MatGridListModule,
     DragDropModule,
+    MatSnackBarModule,
 
     FlexLayoutModule,
   ],
