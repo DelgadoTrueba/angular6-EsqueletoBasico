@@ -14,3 +14,45 @@
 <app-snack-bar></app-snack-bar>
 
 <hr>
+
+<div class="flex-row">
+  <div>
+      <h3>All fridge</h3>
+      <div *ngFor="let item of allFridge">
+        <b>Nombre:</b> {{item.nombre}}, <b>Cantidad:</b>: {{item.cantidad}}
+      </div>
+      <button (click)="anadirAgua(1)" >Agua = 1</button>
+      <button (click)="anadirBroccoli(1)" >Broccoli = 1</button>
+      <button (click)="anadirCocacola(1)" >Cocacola = 1</button>
+      <button (click)="anadirChurros(1)" >Churros = 1</button>
+  </div>
+  <div>
+      <h3>Main fridge</h3>
+      <div *ngFor="let item of mainFridge">
+        <b>Nombre:</b> {{item.nombre}}, <b>Cantidad:</b>: {{item.cantidad}}
+      </div>
+      <button (click)="anadirBroccoli(0)" >Broccoli = 0</button>
+  </div>
+  <div>
+      <h3>Left Side Fridge</h3>
+      <div *ngFor="let item of leftSide">
+        <b>Nombre:</b> {{item.nombre}}, <b>Cantidad:</b>: {{item.cantidad}}
+      </div>
+      <button (click)="anadirAgua(0)" >Agua = 0</button>
+  </div>
+  <div>
+      <h3>Left Right Fridge</h3>
+      <div *ngFor="let item of rightSide">
+        <b>Nombre:</b> {{item.nombre}}, <b>Cantidad:</b>: {{item.cantidad}}
+      </div>
+      <button (click)="anadirCocacola(0)" >Cocacola = 0</button>
+  </div>
+  <div>
+      <h3>Freezer</h3>
+      <div *ngFor="let item of freezer">
+        <b>Nombre:</b> {{item.nombre}}, <b>Cantidad:</b>: {{item.cantidad}}
+      </div>
+      <button (click)="anadirChurros(0)" >Churros = 0</button>
+  </div>
+</div>
+
